@@ -1,0 +1,56 @@
+body{
+	background-color:#f74d0a;
+	margin:0;
+	width:100vw;
+	height:100vh;
+	}
+
+/* left side main div for title*/
+#welcome{
+	background-color:#1a1b42;
+	width:40%;
+	height:100%;
+	float:left;
+}
+h1{
+	color:white;
+	font-size:120px;
+	padding-top:45%;
+	font-family:kayak sans;
+	padding-left:3%;
+	margin:0;
+}
+h2{
+	color:white;
+	font-size:60px;
+	font-family:kayak sans;
+	padding-left:3%;
+	margin:0;
+}
+/*divs for circle images*/
+#circleimage1{
+	box-sizing:border-box;
+	background-color:#1a1b42;
+	width:28%;
+	height:100%;
+	float:left;
+	padding-left:5%;
+	padding-top:12%;
+}
+#circleimage2{
+	box-sizing:border-box;
+	background-color:#1a1b42;
+	width:32%;
+	height:50%;
+	float:left;
+	padding-left:7%
+}
+#circleimage3{
+	box-sizing:border-box;
+	background-color:#1a1b42;
+	width:32%;
+	height:50%;
+	float:left;
+	padding-left:7%;
+}
+/*end of divs for circle images*/
