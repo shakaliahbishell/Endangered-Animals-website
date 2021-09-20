@@ -3,8 +3,15 @@ body{
 	margin:0;
 	width:100vw;
 	height:100vh;
+	overflow-x:hidden;
 	}
-
+#homescreen{
+	background-color:red;
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:100vh;
+}
 /* left side main div for title*/
 #welcome{
 	background-color:#1a1b42;
@@ -17,14 +24,14 @@ h1{
 	font-size:120px;
 	padding-top:45%;
 	font-family:kayak sans;
-	padding-left:3%;
+	padding-left:7%;
 	margin:0;
 }
 h2{
 	color:white;
 	font-size:60px;
 	font-family:kayak sans;
-	padding-left:3%;
+	padding-left:7%;
 	margin:0;
 }
 /*divs for circle images*/
@@ -54,3 +61,43 @@ h2{
 	padding-left:7%;
 }
 /*end of divs for circle images*/
+/*start of main image screen*/
+#imagescreen{
+	background-color:pink;
+	margin:0;
+	padding:0;
+	width:1920px;
+	height:100vh;
+	overflow-x:scroll;
+	overflow-y:hidden;
+
+	
+}
+#imagebox{
+	background-color:brown;
+	margin:0;
+	padding:0;
+	width:3840px;
+	height:100%;
+	overflow:hidden;
+
+	
+	
+}
+.imageboxs{
+	background-color:blue;
+	height:100%;
+	width:640px;
+	display:inline;
+	float:left;
+}
+.scrollimages{
+	width: 640px;
+	height:100%;
+}
+
+
+
+
+
+
