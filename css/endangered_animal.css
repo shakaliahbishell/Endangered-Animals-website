@@ -41,16 +41,32 @@ h2{
 	width:28%;
 	height:100%;
 	float:left;
-	padding-left:5%;
-	padding-top:12%;
+	background-image:url(..images/amur_leopard_circle.jpg);
+	animation-name: example;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
 }
+
+@keyframes example {
+	from {background-image:url(../images/amur_leopard_circle.jpg);}
+	to {background-image:url(../images/giant_panda_circle.jpg);}
+}
+
 #circleimage2{
 	box-sizing:border-box;
 	background-color:#1a1b42;
 	width:32%;
 	height:50%;
 	float:left;
-	padding-left:7%
+	background-image:url(../images/orangutan_circle.jpg);
+	animation-name: example2;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+	from {background-image:url(../images/orangutan_circle.jpg);}
+	to {background-image:url(../images/polar_bear_circle.jpg);}
 }
 #circleimage3{
 	box-sizing:border-box;
@@ -58,9 +74,18 @@ h2{
 	width:32%;
 	height:50%;
 	float:left;
-	padding-left:7%;
+	background-image:url(../images/blue_whale_circle.jpg);
+	animation-name: example3;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example3 {
+	from {background-image:url(../images/blue_whale_circle.jpg);}
+	to {background-image:url(../images/tiger_circle.jpg);}
 }
 /*end of divs for circle images*/
+
 /*start of main image screen*/
 #imagescreen{
 	background-color:pink;
@@ -69,9 +94,7 @@ h2{
 	width:1920px;
 	height:100vh;
 	overflow-x:scroll;
-	overflow-y:hidden;
-
-	
+	overflow-y:hidden;	
 }
 #imagebox{
 	background-color:brown;
@@ -79,15 +102,13 @@ h2{
 	padding:0;
 	width:3840px;
 	height:100%;
-	overflow:hidden;
-
-	
-	
+	overflow:hidden;	
 }
 .imageboxs{
 	background-color:blue;
 	height:100%;
 	width:640px;
+	position:relative;
 	display:inline;
 	float:left;
 }
@@ -95,6 +116,107 @@ h2{
 	width: 640px;
 	height:100%;
 }
+/*start of overlay effect*/
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+.imageboxs:hover .overlay {
+  width: 100%;
+  opacity:0.7;
+}
+.text {
+  white-space: nowrap; 
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*end of overlay effect*/
+/*end of image screen*/
+
+/*start of scroll buttons */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.scroll-down1 {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down1 {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down1:before {
+    position: absolute;
+	top: calc(50% - 10px);
+    left: calc(50% - 7.5px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 15px;
+    height: 15px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+
+
+ 
+
+
 
 
 
